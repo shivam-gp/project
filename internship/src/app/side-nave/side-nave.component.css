@@ -1,0 +1,30 @@
+.example-container {
+    width: 200px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0.5%;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  mat-icon{
+      float: right;
+  }
+  h3{
+      font-style: bold;
+  }
+
+  mat-divider{
+      width: 100%;
+      padding: 0%;
+      margin: 0%;
+  }

@@ -1,0 +1,15 @@
+mat-card{
+    width: 80%;
+    margin: 5% auto;
+    border-radius: 8px;;
+
+}
+mat-select{
+   height: auto;
+   width: auto;
+}
+
+mat-label{
+    color:darkblue;
+   
+}

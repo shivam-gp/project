@@ -1,0 +1,79 @@
+ <div > 
+     <mat-grid-list class="image" cols="2" >
+        <mat-grid-tile>
+        <div class="right"><p> CZAR</p></div>
+        </mat-grid-tile>
+    <mat-grid-tile>
+    <mat-card >
+      <mat-card-title style="text-align:center;">Log In</mat-card-title>
+      <mat-tab-group mat-stretch-tabs>
+        <mat-tab >
+            <mat-card-content>
+              <form action="">
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Email"
+                    required
+                    name="email"
+                    onChange=(this.emailChange)
+                    ngModel
+                    #email="ngModel">
+                    <mat-error *ngIf="email.invalid">Email is required</mat-error>
+                  <mat-icon matSuffix>email</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Password"
+                    type="password"
+                    required
+                    minlength="6"
+                    name="password"
+                    ngModel
+                    #password="ngModel">
+                    <mat-error
+                      *ngIf="password.errors && password.errors.required">
+                      Password is required
+                    </mat-error>
+                    <mat-error
+                      *ngIf="password.errors && password.errors.minlength">
+                      Password must be of length 6
+                    </mat-error>
+                  <mat-icon matSuffix>lock</mat-icon>
+                </mat-form-field>
+                
+                <mat-checkbox>Remember Me!</mat-checkbox>
+                
+                <button (click)="next()"
+                  mat-raised-button
+                  color="primary"
+                  class="login-button" [disabled]="!email.valid || !password.valid">
+                  Sign In
+                </button>
+  
+                <button
+                  mat-raised-button
+                  class="login-button">
+                  Forgot Password
+                </button>
+              </form>
+            </mat-card-content>
+        </mat-tab>     
+      </mat-tab-group>
+    </mat-card>
+    </mat-grid-tile>
+    </mat-grid-list>
+    
+    <!-- <mat-grid-list cols="3" rowHeight="100px">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+          {{tile.text}}
+        </mat-grid-tile>
+      </mat-grid-list> -->
+    
+    </div>
+    

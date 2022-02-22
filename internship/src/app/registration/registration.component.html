@@ -1,0 +1,110 @@
+<div><mat-card>
+    <mat-stepper linear>
+        <mat-step>
+            <ng-template matStepLabel>Personal Information</ng-template>
+            <ng-template matStepContent>
+                <mat-label>Name: :</mat-label><br>
+                <mat-form-field>
+                    <input matInput type="text">
+                    <!-- <mat-select >
+            <mat-option value="webroom 1">Webroom 1</mat-option>
+            <mat-option value="webroom 2" >Webroom 2</mat-option>
+            <mat-option value="webroom 3">Webroom 3</mat-option>
+            <mat-option value="bharat-vc">Bharat VC</mat-option>
+            <mat-option value="reserved portal" >Reserved Portal</mat-option>
+            <mat-option value="other">Other</mat-option>
+            
+        </mat-select> -->
+                    <mat-label style="color: grey;">Enter the name</mat-label>
+                </mat-form-field><br>
+                <mat-label>Father's Name: </mat-label><br>
+                <mat-form-field>
+                    <input matInput type="text">
+                </mat-form-field><bR>
+
+                <mat-label>Phone No.</mat-label><br>
+                <mat-form-field>
+                    <input matInput type="number">
+                    <!-- <mat-label style="color: grey;">Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker> -->
+                </mat-form-field><br>
+                <mat-label>Email: </mat-label><br>
+                <mat-form-field>
+                    <input matInput type="email">
+                </mat-form-field><br>
+                <button mat-button matStepperNext>Next</button>
+            </ng-template>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Education Qualification</ng-template>
+            <ng-template matStepContent>
+                <mat-label>Qualification</mat-label><br>
+                <mat-form-field>
+                    <mat-select>
+                        <mat-option value="webroom 1">B.Tech</mat-option>
+                        <mat-option value="webroom 2">M.Tech</mat-option>
+                        <mat-option value="webroom 3">BSc</mat-option>
+                        <mat-option value="bharat-vc">BA</mat-option>
+                    </mat-select>
+                </mat-form-field><br>
+                <mat-label>Institute</mat-label><br>
+                <mat-form-field>
+                    <input matInput type="text">
+                </mat-form-field><br>
+                <mat-label>Department</mat-label><br>
+                <mat-form-field>
+                    <input matInput type="text">
+                </mat-form-field><br>
+
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </ng-template>
+        </mat-step>
+        <mat-step>
+            
+                <ng-template matStepLabel>Upload Documents</ng-template>
+                <ng-template matStepContent>
+                <mat-label> ID Proof: </mat-label><br>
+                <mat-form-field>
+                    <mat-select>
+                        <mat-option value="#">Aadhar Card</mat-option>
+                        <mat-option value="#">PAN Card</mat-option>
+                    </mat-select>
+                </mat-form-field><br>
+                <mat-label> Documents: </mat-label><br>
+                <mat-form-field>
+                    <input matInput type="text">
+                </mat-form-field><br>
+
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </ng-template>
+        </mat-step>
+        <mat-step>
+          
+                <ng-template matStepLabel>Choice Filling</ng-template>
+                <ng-template matStepContent>
+                <!-- <mat-label> ID Proof: </mat-label><br>
+                <mat-form-field>
+                    <mat-select>
+                        <mat-option value="#">Aadhar Card</mat-option>
+                        <mat-option value="#">PAN Card</mat-option>
+                    </mat-select>
+                </mat-form-field><br>
+                <mat-label> Documents: </mat-label><br>
+                <mat-form-field>
+                    <input matInput type="text">
+                </mat-form-field><br> -->
+
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button>Submit</button>
+                <button mat-button>Cancel</button>
+            </ng-template>
+        </mat-step>
+    </mat-stepper>
+
+
+</mat-card>
+</div>
